@@ -1,0 +1,286 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/skillList"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/skill_list_header"
+        style="@style/skill_list_header"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:textStyle="bold" >
+
+        <TextView
+            android:id="@+id/skill_list_header_attr"
+            style="@style/skill_list_header"
+            android:layout_width="0.0px"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/skill_list_header_skillname"
+            style="@style/skill_list_header"
+            android:layout_width="0.0px"
+            android:layout_weight="0.1"
+            android:layout_height="wrap_content"
+            android:text="Skill" />
+
+        <TextView
+            android:id="@+id/skill_list_header_skillname_major"
+            style="@style/skill_list_header"
+            android:layout_width="0.0px"
+            android:layout_weight="0.3"
+            android:layout_height="wrap_content"
+            android:text="(major)"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/skill_list_header_prev"
+            style="@style/skill_list_header"
+            android:layout_width="0.0px"
+            android:layout_weight="0.15"
+            android:layout_height="wrap_content"
+            android:text="Prev." />
+
+        <TextView
+            android:id="@+id/skill_list_header_act"
+            style="@style/skill_list_header"
+            android:layout_width="0.0px"
+            android:layout_weight="0.15"
+            android:layout_height="wrap_content"
+            android:text="Act." />
+
+        <TextView
+            android:id="@+id/skill_list_header_diff"
+            style="@style/skill_list_header"
+            android:layout_width="0.0px"
+            android:layout_weight="0.15"
+            android:layout_height="wrap_content"
+            android:text="diff." />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/skillList_listView"
+        style="@style/skill_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/levelup_pane"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#38200c"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/levelup_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Touch to level up"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/multipliers"
+        style="@style/skill_list_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/mult_agl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mult_agl_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="AGL"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mult_agl_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mult_end"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mult_end_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="END"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mult_end_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mult_int"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mult_int_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="INT"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mult_int_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mult_per"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mult_per_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="PER"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mult_per_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mult_spd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mult_spd_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SPD"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mult_spd_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mult_str"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mult_str_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="STR"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mult_str_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mult_wil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/mult_wil_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="WIL"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mult_wil_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mult_progress"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:textColor="#b08f66" >
+
+            <TextView
+                android:id="@+id/progress_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maj."
+                android:textColor="#b08f66"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/progress_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#b08f66" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textIfIsEmpty"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please create a new character by opening the menu" />
+
+</LinearLayout>

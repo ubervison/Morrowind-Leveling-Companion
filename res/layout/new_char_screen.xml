@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/new_char_input"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/new_char_input"
+            android:inputType="text"
+            android:singleLine="true" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/new_char_start_level"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:digits="1234567890"
+            android:hint="@string/new_char_start_level_input"
+            android:inputType="phone"
+            android:singleLine="true" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/new_char_table_header"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/new_char_table_header_skill"
+            android:layout_width="120dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="Skill name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/new_char_table_header_level"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="Skill level"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/new_char_table_header_ismajor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="Major skill?"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/skillTable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

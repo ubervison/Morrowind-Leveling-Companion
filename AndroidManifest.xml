@@ -1,0 +1,31 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ch.ubervison.mlc"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mlc_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat" android:description="@string/app_description">
+        <activity android:name="ch.ubervison.mlc.MainActivity" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="ch.ubervison.mlc.CreateCharacterActivity"
+            android:label="@string/new_char_screen_label">"
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="ch.ubervison.mlc.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

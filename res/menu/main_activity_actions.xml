@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mlc="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/undo_action"
+        android:icon="@drawable/ic_action_undo"
+        android:title="@string/undo_action"
+        mlc:showAsAction="ifRoom"/>
+    <item 
+        android:id="@+id/sort_button"
+        android:title="@string/sort_button"
+        mlc:showAsAction="never"/>
+    <item
+        android:id="@+id/new_char_button"
+        android:icon="@drawable/ic_action_new"
+        android:title="@string/new_char_button"
+        mlc:showAsAction="never"/>
+    <item
+        android:id="@+id/delete_char_button"
+        android:title="@string/delete_char_button"
+        mlc:showAsAction="never"/>
+    <item 
+        android:id="@+id/about_button"
+        android:title="@string/about_button"
+        android:showAsAction="never"/>
+    <item
+        android:id="@+id/character_select_popup"
+        android:textSize="20dp"
+        android:title="Select character"
+        mlc:showAsAction="always"/>
+    <item
+        android:id="@+id/create_char_button"
+        android:icon="@drawable/ic_action_accept"
+        android:title="@string/create_char_button"
+        mlc:showAsAction="always"/>
+
+</menu>

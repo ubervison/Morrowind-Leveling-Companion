@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Morrowind Leveling Companion</string>
+    <string name="new_char_button">New character</string>
+    <string name="new_char_name">Character name</string>
+    <string name="save_char_button">Save character</string>
+    <string name="skill_newchar_header_name">Skill</string>
+    <string name="skill_newchar_header_value">Level</string>
+    <string name="skill_newchar_header_ismajor">Major?</string>
+    <string name="new_char_input">Character name</string>
+    <string name="new_char_screen_label">New character</string>
+    <string name="create_char_button"/>
+    <string name="undo_action">Undo</string>
+    <string name="delete_char_button">Delete character</string>
+    <string name="app_description">An application to help you keep track of the progress of your character in Morrowind.</string>
+    <string name="sort_button">Sort</string>
+    <string name="new_char_start_level_input">Starting level</string>
+    <string name="about_button">About</string>
+</resources>
